@@ -1,0 +1,18 @@
+input,
+select,
+button {
+	border: 1px solid #000;
+	border-radius: 3px;
+}
+
+input {
+	padding: 2px 4px;
+}
+
+input[disabled] {
+	background-color: rgb(230, 230, 230);
+}
+
+button {
+	padding: 3px 5px;
+}

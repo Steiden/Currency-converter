@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Конвертер валют</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<!-- Шапка страницы -->
+	<header class="header">
+		<h1 class="header__title">Конвертер валют</h1>
+	</header>
+	<!-- Основная часть страницы -->
+	<main class="main">
+		<form action="" class="form" id="form">
+			<section class="form__container">
+				<section class="form__section-container">
+					<section class="form__section">
+						<article class="form__input-container">
+							<label for="amount" class="form__label">Сумма:</label>
+							<input name="amount" type="text" class="form__input" id="amount">
+						</article>
+						<article class="form__input-container">
+							<label for="currencyFrom" class="form__label">Валюта:</label>
+							<select name="currencyFrom" id="currencyFrom" class="form__select">
+								<option value="RUB">RUB рубль</option>
+								<option value="USD">USD дооллар</option>
+								<option value="EUR">EUR евро</option>
+								<option value="JPY">JPY иена</option>
+								<option value="CNY">CNY юань</option>
+							</select>
+						</article>
+					</section>
+					<section class="form__section">
+						<article class="form__input-container">
+							<label for="result" class="form__label">Результат:</label>
+							<input name="result" type="text" class="form__input" id="result" disabled>
+						</article>
+						<article class="form__input-container">
+							<label for="currencyTo" class="form__label">Конвертировать в:</label>
+							<select name="currencyTo" id="currencyTo" class="form__select">
+								<option value="RUB">RUB рубль</option>
+								<option value="USD">USD дооллар</option>
+								<option value="EUR">EUR евро</option>
+								<option value="JPY">JPY иена</option>
+								<option value="CNY">CNY юань</option>
+							</select>
+						</article>
+						<article class="form__input-container">
+							<label for="course" class="form__label">Курс валюты:</label>
+							<input name="course" type="text" class="form__input" id="course" disabled>
+						</article>
+					</section>
+					<section class="form__section">
+						<button type="submit" class="form__button" id="submit-btn">Расчитать</button>
+					</section>
+					<section class="form__section">
+						<button type="reset" class="form__button" id="reset-btn">Очистить</button>
+					</section>
+				</section>
+			</section>
+		</form>
+	</main>
+	<!-- Подвал страницы -->
+	<footer class="footer"></footer>
+	<script src="./js/script.js" type="module"></script>
+</body>
+</html>
