@@ -1,3 +1,53 @@
 @import "_reset";
 @import "_variables";
 @import "_mixins";
+@import "_fonts";
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+	padding: 20px;
+
+	border-bottom: 1px solid #000;
+}
+
+.header__title {
+	font-size: 2em;
+}
+
+.main {
+	@include flex-center();
+	height: 100vh;
+}
+
+.form {
+}
+
+.form__container {
+}
+
+.form__section-container {
+}
+
+.form__section {
+}
+
+.form__input-container {
+}
+
+.form__label {
+}
+
+.form__input {
+}
+
+.form__select {
+}
+
+.form__button {
+}
+
+.footer {
+}

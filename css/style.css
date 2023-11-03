@@ -124,3 +124,42 @@ input[disabled] {
 button {
   padding: 3px 5px;
 }
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url(../fonts/Ubuntu-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url(../fonts/Ubuntu-Regular.ttf);
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url(../fonts/Ubuntu-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url(../fonts/Ubuntu-Bold.ttf);
+  font-weight: 700;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.header {
+  padding: 20px;
+  border-bottom: 1px solid #000;
+}
+
+.header__title {
+  font-size: 2em;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
