@@ -18,38 +18,40 @@
 				<section class="form__section-container">
 					<section class="form__section">
 						<article class="form__input-container">
-							<label for="amount" class="form__label">Сумма:</label>
+							<label for="amount" class="form__label input-label" id="amountLabel">Сумма:</label>
 							<input name="amount" type="text" class="form__input" id="amount">
 						</article>
 						<article class="form__input-container">
-							<label for="currencyFrom" class="form__label">Валюта:</label>
+							<!-- <label for="currencyFrom" class="form__label">Валюта:</label> -->
 							<select name="currencyFrom" id="currencyFrom" class="form__select">
-								<option value="RUB">RUB рубль</option>
-								<option value="USD">USD доллар</option>
-								<option value="EUR">EUR евро</option>
-								<option value="JPY">JPY иена</option>
-								<option value="CNY">CNY юань</option>
+								<option value="RUB">RUB</option>
+								<option value="USD">USD</option>
+								<option value="EUR">EUR</option>
+								<option value="JPY">JPY</option>
+								<option value="CNY">CNY</option>
 							</select>
 						</article>
 					</section>
 					<section class="form__section">
 						<article class="form__input-container">
-							<label for="result" class="form__label">Результат:</label>
-							<input name="result" type="text" class="form__input" id="result" disabled>
+							<label for="course" class="form__label input-label">Курс валюты:</label>
+							<input name="course" type="text" class="form__input" id="course" disabled>
 						</article>
 						<article class="form__input-container">
-							<label for="currencyTo" class="form__label">Конвертировать в:</label>
+							<!-- <label for="currencyTo" class="form__label">Конвертировать в:</label> -->
 							<select name="currencyTo" id="currencyTo" class="form__select">
-								<option value="RUB">RUB рубль</option>
-								<option value="USD">USD доллар</option>
-								<option value="EUR">EUR евро</option>
-								<option value="JPY">JPY иена</option>
-								<option value="CNY">CNY юань</option>
+								<option value="RUB">RUB</option>
+								<option value="USD">USD</option>
+								<option value="EUR">EUR</option>
+								<option value="JPY">JPY</option>
+								<option value="CNY">CNY</option>
 							</select>
 						</article>
+					</section>
+					<section class="form__section">
 						<article class="form__input-container">
-							<label for="course" class="form__label">Курс валюты:</label>
-							<input name="course" type="text" class="form__input" id="course" disabled>
+							<label for="result" class="form__label input-label">Результат:</label>
+							<input name="result" type="text" class="form__input" id="result" disabled>
 						</article>
 					</section>
 					<section class="form__section">

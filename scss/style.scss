@@ -2,6 +2,7 @@
 @import "_variables";
 @import "_mixins";
 @import "_fonts";
+@import "_colors";
 
 body {
 	font-family: 'Ubuntu', sans-serif;
@@ -29,21 +30,47 @@ body {
 }
 
 .form__section-container {
+	@include flex-collumn();
+	gap: 10px;
 }
 
 .form__section {
+	@include flex-row-reverse();
+	gap: 5px;
 }
 
 .form__input-container {
+	@include flex-center();
+	justify-content: start;
+	position: relative;
 }
 
 .form__label {
+	&.input-label {
+		position: absolute;
+		z-index: 10;
+		left: $left;
+		transition: $transition-time;
+		background-color: $color-white;
+
+		color: $color-gray-dark;
+	}
 }
 
 .form__input {
+	border: 2px solid currentColor;
+	border-radius: $border-radius;
+	padding: $input-padding;
+
+	color: #00ccff;
+	box-shadow: 0 0 2px currentColor;
 }
 
 .form__select {
+	height: 100%;
+	border: 1px solid currentColor;
+	border-radius: $border-radius;
+	padding: $input-padding;
 }
 
 .form__button {

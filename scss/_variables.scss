@@ -1,18 +1,7 @@
-input,
-select,
-button {
-	border: 1px solid #000;
-	border-radius: 3px;
-}
+// Позиционирование
+$input-padding: 12px;
+$left: 10px;
 
-input {
-	padding: 2px 4px;
-}
+$transition-time: 0.5s;
 
-input[disabled] {
-	background-color: rgb(230, 230, 230);
-}
-
-button {
-	padding: 3px 5px;
-}
+$border-radius: 5px;

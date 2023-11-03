@@ -2,7 +2,7 @@
 export function validateInputFloat(e) {
 	try {
 		inputOnlyFloats(e);
-		withoutEmpty(e);
+		// withoutEmpty(e);
 		replaceDoubleZeros(e);
 		deleteStartingZero(e);
 		constraintBeforeDot(e);
