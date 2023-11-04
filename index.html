@@ -19,7 +19,7 @@
 					<section class="form__section">
 						<article class="form__input-container">
 							<label for="amount" class="form__label input-label" id="amountLabel">Сумма:</label>
-							<input name="amount" type="text" class="form__input" id="amount">
+							<input name="amount" type="text" class="form__input input-amount" id="amount">
 						</article>
 						<article class="form__input-container">
 							<!-- <label for="currencyFrom" class="form__label">Валюта:</label> -->
@@ -34,13 +34,13 @@
 					</section>
 					<section class="form__section">
 						<article class="form__input-container">
-							<label for="course" class="form__label input-label">Курс валюты:</label>
-							<input name="course" type="text" class="form__input" id="course" disabled>
+							<label for="course" class="form__label input-label input-course-label">Курс валюты:</label>
+							<input name="course" type="text" class="form__input input-course" id="course" readonly>
 						</article>
+						<!-- !TODO Доработать расположение элементов на странице -->
 						<article class="form__input-container">
 							<!-- <label for="currencyTo" class="form__label">Конвертировать в:</label> -->
 							<select name="currencyTo" id="currencyTo" class="form__select">
-								<option value="RUB">RUB</option>
 								<option value="USD">USD</option>
 								<option value="EUR">EUR</option>
 								<option value="JPY">JPY</option>
@@ -50,15 +50,13 @@
 					</section>
 					<section class="form__section">
 						<article class="form__input-container">
-							<label for="result" class="form__label input-label">Результат:</label>
-							<input name="result" type="text" class="form__input" id="result" disabled>
+							<label for="result" class="form__label input-label input-result-label">Результат:</label>
+							<input name="result" type="text" class="form__input input-result" id="result" readonly>
 						</article>
 					</section>
-					<section class="form__section">
-						<button type="submit" class="form__button" id="submit-btn">Расчитать</button>
-					</section>
-					<section class="form__section">
-						<button type="reset" class="form__button" id="reset-btn">Очистить</button>
+					<section class="form__section button-container">
+						<button type="submit" class="form__button button-submit" id="submit-btn">Расчитать</button>
+						<button type="reset" class="form__button button-reset" id="reset-btn">Очистить</button>
 					</section>
 				</section>
 			</section>

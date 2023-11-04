@@ -154,7 +154,7 @@ body {
 .form__section {
   display: flex;
   flex-direction: row-reverse;
-  gap: 5px;
+  gap: 10px;
 }
 
 .form__input-container {
@@ -165,13 +165,14 @@ body {
   position: relative;
 }
 
-.form__label.input-label {
+.input-label {
   position: absolute;
   z-index: 10;
   left: 10px;
   transition: 0.5s;
   background-color: #fff;
   color: #606060;
+  cursor: inherit;
 }
 
 .form__input {
@@ -187,4 +188,58 @@ body {
   border: 1px solid currentColor;
   border-radius: 5px;
   padding: 12px;
+}
+
+.input-course {
+  color: #ff0000;
+}
+
+.input-course-label {
+  top: -8px;
+  font-size: 0.8em;
+}
+
+.input-result {
+  color: #ff9900;
+  cursor: default;
+}
+
+.input-result-label {
+  cursor: default;
+}
+
+.button-container {
+  flex-direction: row;
+  justify-content: end;
+  gap: 20px;
+}
+
+.form__button {
+  transition: 0.3s;
+}
+
+.button-submit {
+  border: 1px solid currentColor;
+  border-radius: 5px;
+  padding: 12px;
+  box-shadow: 0 0 5px currentColor;
+  border-color: #cccc00;
+  box-shadow: 0 0 3px 1px #cccc00;
+}
+.button-submit:hover {
+  background-color: #ffff00;
+  color: #fff;
+}
+
+.button-reset {
+  border: 1px solid currentColor;
+  border-radius: 5px;
+  padding: 12px;
+  box-shadow: 0 0 5px currentColor;
+  border-color: #660066;
+  box-shadow: 0 0 3px 1px #660066;
+}
+.button-reset:hover {
+  background-color: #cc00cc;
+  color: #fff;
 }

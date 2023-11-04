@@ -4,6 +4,7 @@ import { validateInputFloat, validateInputInt } from './modules/validation.mjs';
 const amount = document.getElementById('amount');
 const amountLabel = document.getElementById('amountLabel');
 
+// TODO Найти информцаию по получение переменных с CSS/SCSS
 // Переменные SCSS
 // ...
 

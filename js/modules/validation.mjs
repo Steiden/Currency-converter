@@ -45,11 +45,11 @@ function deleteStartingZero(e) {
 function constraintBeforeDot(e) {
 	if(e.target.value.match(/\./g)){
 		let text = e.target.value.split('.');
-		if(e.target.value.split('.')[0].length > 3)
-			e.target.value = text[0].substring(0, 3) + '.' + text[1];
+		if(e.target.value.split('.')[0].length > 12)
+			e.target.value = text[0].substring(0, -1) + '.' + text[1];
 	}
 	else
-		if(e.target.value.length > 3) e.target.value = e.target.value.slice(0, -1);
+		if(e.target.value.length > 12) e.target.value = e.target.value.slice(0, -1);
 }
 // Ограничение количества цифир после точки
 function constraintAfterDot(e) {
