@@ -190,6 +190,16 @@ body {
   padding: 12px;
 }
 
+.select-currencyFrom {
+  border-color: #0066cc;
+  box-shadow: 0 0 3px #0066cc;
+}
+
+.select-currencyTo {
+  border-color: #cc0000;
+  box-shadow: 0 0 3px #cc0000;
+}
+
 .input-course {
   color: #ff0000;
 }

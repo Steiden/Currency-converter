@@ -45,7 +45,6 @@ body {
 	position: relative;
 }
 
-// TODO Отсюда подумать получше про стили элементов
 .form__label {
 
 }
@@ -74,6 +73,16 @@ body {
 	border: 1px solid currentColor;
 	border-radius: $border-radius;
 	padding: $input-padding;
+}
+
+.select-currencyFrom {
+	border-color: $color-blue-dark;
+	box-shadow: 0 0 3px $color-blue-dark;
+}
+
+.select-currencyTo {
+	border-color: $color-red-dark;
+	box-shadow: 0 0 3px $color-red-dark;
 }
 
 .input-course {
