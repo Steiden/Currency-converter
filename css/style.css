@@ -142,18 +142,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   height: 100vh;
 }
 
 .form__section-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
 .form__section {
   display: flex;
   flex-direction: row-reverse;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -161,6 +164,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: start;
   position: relative;
 }
@@ -176,11 +180,10 @@ body {
 }
 
 .form__input {
-  border: 2px solid currentColor;
+  border: 2px solid #00ccff;
   border-radius: 5px;
   padding: 12px;
-  color: #00ccff;
-  box-shadow: 0 0 2px currentColor;
+  box-shadow: 0 0 2px #00ccff;
 }
 
 .form__select {
@@ -201,16 +204,19 @@ body {
 }
 
 .input-course {
-  color: #ff0000;
+  border-color: #ff0000;
+  box-shadow: 0 0 3px #ff0000;
 }
 
-.input-course-label {
+.input-course-label,
+.input-result-label {
   top: -8px;
   font-size: 0.8em;
 }
 
 .input-result {
-  color: #ff9900;
+  border-color: #ff9900;
+  box-shadow: 0 0 3px #ff9900;
   cursor: default;
 }
 
@@ -234,7 +240,7 @@ body {
   padding: 12px;
   box-shadow: 0 0 5px currentColor;
   border-color: #cccc00;
-  box-shadow: 0 0 3px 1px #cccc00;
+  box-shadow: 0 0 3px #cccc00;
 }
 .button-submit:hover {
   background-color: #ffff00;
@@ -247,9 +253,30 @@ body {
   padding: 12px;
   box-shadow: 0 0 5px currentColor;
   border-color: #660066;
-  box-shadow: 0 0 3px 1px #660066;
+  box-shadow: 0 0 3px #660066;
 }
 .button-reset:hover {
   background-color: #cc00cc;
   color: #fff;
+}
+
+@media (max-width: 350px) {
+  .form__section-container {
+    gap: 20px;
+  }
+  .form__section {
+    gap: 0;
+    justify-content: center;
+  }
+  .form__input-container {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .form__input {
+    width: 100%;
+  }
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

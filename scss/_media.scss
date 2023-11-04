@@ -1,0 +1,22 @@
+@media (max-width: 350px) {
+	.form__section-container {
+		gap: 20px;
+	}
+	
+	.form__section {
+		gap: 0;
+		justify-content: center;
+	}
+
+	.form__input-container {
+		width: fit-content;
+	}
+	.form__input {
+		width: 100%;
+	}
+	
+	.button-container {
+		flex-direction: column;
+		gap: 10px;
+	}
+}

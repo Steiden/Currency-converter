@@ -4,16 +4,19 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 @mixin flex-collumn {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 @mixin flex-row-reverse {
 	display: flex;
 	flex-direction: row-reverse;
+	flex-wrap: wrap;
 }
 
 @mixin button {
@@ -21,4 +24,9 @@
 	border-radius: $border-radius;
 	padding: $input-padding;
 	box-shadow: 0 0 5px currentColor;
+}
+
+@mixin style-shadow($color) {
+	border-color: $color;
+	box-shadow: 0 0 3px $color;
 }

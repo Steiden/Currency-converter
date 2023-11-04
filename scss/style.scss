@@ -60,12 +60,11 @@ body {
 }
 
 .form__input {
-	border: 2px solid currentColor;
+	border: 2px solid $color-blue-light;
 	border-radius: $border-radius;
 	padding: $input-padding;
 
-	color: #00ccff;
-	box-shadow: 0 0 2px currentColor;
+	box-shadow: 0 0 2px $color-blue-light;
 }
 
 .form__select {
@@ -76,26 +75,25 @@ body {
 }
 
 .select-currencyFrom {
-	border-color: $color-blue-dark;
-	box-shadow: 0 0 3px $color-blue-dark;
+	@include style-shadow($color-blue-dark);
 }
 
 .select-currencyTo {
-	border-color: $color-red-dark;
-	box-shadow: 0 0 3px $color-red-dark;
+	@include style-shadow($color-red-dark);
 }
 
 .input-course {
-	color: $color-red-light;
+	@include style-shadow($color-red-light);
 }
 
-.input-course-label {
+.input-course-label,
+.input-result-label {
 	top: -$left + 2px;
 	font-size: 0.8em;
 }
 
 .input-result {
-	color: $color-orange-light;
+	@include style-shadow($color-orange-light);
 	cursor: default;
 }
 
@@ -115,8 +113,7 @@ body {
 
 .button-submit {
 	@include button();
-	border-color: $color-yellow-dark;
-	box-shadow: 0 0 3px 1px $color-yellow-dark;
+	@include style-shadow($color-yellow-dark);
 
 	&:hover {
 		background-color: $color-yellow-light;
@@ -126,8 +123,7 @@ body {
 
 .button-reset {
 	@include button();
-	border-color: $color-violet-dark;
-	box-shadow: 0 0 3px 1px $color-violet-dark;
+	@include style-shadow($color-violet-dark);
 
 	&:hover {
 		background-color: $color-violet-light;
@@ -137,3 +133,5 @@ body {
 
 .footer {
 }
+
+@import "_media";
