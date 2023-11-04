@@ -2,6 +2,7 @@
 @import "_variables";
 @import "_mixins";
 @import "_fonts";
+@import "_colors";
 
 body {
 	font-family: 'Ubuntu', sans-serif;
@@ -29,24 +30,109 @@ body {
 }
 
 .form__section-container {
+	@include flex-collumn();
+	gap: 10px;
 }
 
 .form__section {
+	@include flex-row-reverse();
+	gap: 10px;
 }
 
 .form__input-container {
+	@include flex-center();
+	justify-content: start;
+	position: relative;
 }
 
 .form__label {
+
+}
+
+.input-label {
+	position: absolute;
+	z-index: 10;
+	left: $left;
+	transition: $transition-time;
+	background-color: $color-white;
+	color: $color-gray-dark;
+	cursor: inherit;
 }
 
 .form__input {
+	border: 2px solid currentColor;
+	border-radius: $border-radius;
+	padding: $input-padding;
+
+	color: #00ccff;
+	box-shadow: 0 0 2px currentColor;
 }
 
 .form__select {
+	height: 100%;
+	border: 1px solid currentColor;
+	border-radius: $border-radius;
+	padding: $input-padding;
+}
+
+.select-currencyFrom {
+	border-color: $color-blue-dark;
+	box-shadow: 0 0 3px $color-blue-dark;
+}
+
+.select-currencyTo {
+	border-color: $color-red-dark;
+	box-shadow: 0 0 3px $color-red-dark;
+}
+
+.input-course {
+	color: $color-red-light;
+}
+
+.input-course-label {
+	top: -$left + 2px;
+	font-size: 0.8em;
+}
+
+.input-result {
+	color: $color-orange-light;
+	cursor: default;
+}
+
+.input-result-label {
+	cursor: default;
+}
+
+.button-container {
+	flex-direction: row;
+	justify-content: end;
+	gap: 20px;
 }
 
 .form__button {
+	transition: $transition-time-fast;
+}
+
+.button-submit {
+	@include button();
+	border-color: $color-yellow-dark;
+	box-shadow: 0 0 3px 1px $color-yellow-dark;
+
+	&:hover {
+		background-color: $color-yellow-light;
+		color: $color-white;
+	}
+}
+
+.button-reset {
+	@include button();
+	border-color: $color-violet-dark;
+	box-shadow: 0 0 3px 1px $color-violet-dark;
+
+	&:hover {
+		background-color: $color-violet-light;
+		color: $color-white;
+	}
 }
 
 .footer {

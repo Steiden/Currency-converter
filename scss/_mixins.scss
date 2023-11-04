@@ -1,5 +1,24 @@
+@import "_variables";
+
 @mixin flex-center {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+@mixin flex-collumn {
+	display: flex;
+	flex-direction: column;
+}
+
+@mixin flex-row-reverse {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+@mixin button {
+	border: 1px solid currentColor;
+	border-radius: $border-radius;
+	padding: $input-padding;
+	box-shadow: 0 0 5px currentColor;
 }

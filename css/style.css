@@ -106,25 +106,6 @@ legend {
   display: block;
 }
 
-input,
-select,
-button {
-  border: 1px solid #000;
-  border-radius: 3px;
-}
-
-input {
-  padding: 2px 4px;
-}
-
-input[disabled] {
-  background-color: rgb(230, 230, 230);
-}
-
-button {
-  padding: 3px 5px;
-}
-
 @font-face {
   font-family: "Ubuntu";
   src: url(../fonts/Ubuntu-Light.ttf);
@@ -162,4 +143,113 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.form__section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form__section {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+
+.form__input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+}
+
+.input-label {
+  position: absolute;
+  z-index: 10;
+  left: 10px;
+  transition: 0.5s;
+  background-color: #fff;
+  color: #606060;
+  cursor: inherit;
+}
+
+.form__input {
+  border: 2px solid currentColor;
+  border-radius: 5px;
+  padding: 12px;
+  color: #00ccff;
+  box-shadow: 0 0 2px currentColor;
+}
+
+.form__select {
+  height: 100%;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+  padding: 12px;
+}
+
+.select-currencyFrom {
+  border-color: #0066cc;
+  box-shadow: 0 0 3px #0066cc;
+}
+
+.select-currencyTo {
+  border-color: #cc0000;
+  box-shadow: 0 0 3px #cc0000;
+}
+
+.input-course {
+  color: #ff0000;
+}
+
+.input-course-label {
+  top: -8px;
+  font-size: 0.8em;
+}
+
+.input-result {
+  color: #ff9900;
+  cursor: default;
+}
+
+.input-result-label {
+  cursor: default;
+}
+
+.button-container {
+  flex-direction: row;
+  justify-content: end;
+  gap: 20px;
+}
+
+.form__button {
+  transition: 0.3s;
+}
+
+.button-submit {
+  border: 1px solid currentColor;
+  border-radius: 5px;
+  padding: 12px;
+  box-shadow: 0 0 5px currentColor;
+  border-color: #cccc00;
+  box-shadow: 0 0 3px 1px #cccc00;
+}
+.button-submit:hover {
+  background-color: #ffff00;
+  color: #fff;
+}
+
+.button-reset {
+  border: 1px solid currentColor;
+  border-radius: 5px;
+  padding: 12px;
+  box-shadow: 0 0 5px currentColor;
+  border-color: #660066;
+  box-shadow: 0 0 3px 1px #660066;
+}
+.button-reset:hover {
+  background-color: #cc00cc;
+  color: #fff;
 }
