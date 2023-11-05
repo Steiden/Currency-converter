@@ -8,7 +8,7 @@ export function validateInputFloat(e) {
 		constraintBeforeDot(e);
 		constraintAfterDot(e);
 		onlyOneDot(e);
-	} catch (err) {}
+	} catch (err) { }
 }
 // Валидация input с целыми числами
 export function validateInputInt(e) {
@@ -17,7 +17,7 @@ export function validateInputInt(e) {
 		withoutEmpty(e);
 		replaceDoubleZeros(e);
 		deleteStartingZero(e);
-	} catch (err) {}
+	} catch (err) { }
 }
 
 
@@ -43,13 +43,13 @@ function deleteStartingZero(e) {
 }
 // Ограничение количества цифр перед точкой
 function constraintBeforeDot(e) {
-	if(e.target.value.match(/\./g)){
+	if (e.target.value.match(/\./g)) {
 		let text = e.target.value.split('.');
-		if(e.target.value.split('.')[0].length > 12)
-			e.target.value = text[0].substring(0, -1) + '.' + text[1];
+		if (e.target.value.split('.')[0].length > 12)
+			e.target.value = text[0].slice(0, -1) + '.' + text[1];
 	}
 	else
-		if(e.target.value.length > 12) e.target.value = e.target.value.slice(0, -1);
+		if (e.target.value.length > 12) e.target.value = e.target.value.slice(0, -1);
 }
 // Ограничение количества цифир после точки
 function constraintAfterDot(e) {
